@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <title>Billing System</title>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="heading">INSTA-MART Billing System</div>
+        
+        <table style="width: 100%;">
+            <tr>
+                <th>Item name</th>
+                <th>Price per kg</th>
+                <th>Qunatity (in KG)</th>
+                <th>Price</th>
+            </tr>
+            <tr id="tomato">
+                <td>Tomato</td>
+                <td data-price="30">₹30 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="tomato"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="onion">
+                <td>Onion</td>
+                <td data-price="40">₹40 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="onion"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="potato">
+                <td>Potato</td>
+                <td data-price="20">₹20 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="potato"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="carrot">
+                <td>Carrot</td>
+                <td data-price="50">₹50 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="carrot"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="cabbage">
+                <td>Cabbage</td>
+                <td data-price="30">₹30 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="cabbage"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="cauliflower">
+                <td>Cauliflower</td>
+                <td data-price="40">₹40 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="cauliflower"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="broccoli">
+                <td>Broccoli</td>
+                <td data-price="80">₹80 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="broccoli"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="">
+                <td>Capsicum</td>
+                <td data-price="20">₹20 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="Capsicum"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr id="Green Peas">
+                <td>Green Peas</td>
+                <td data-price="40">₹40 per kg</td>
+                <td>Quantity (in KG) &nbsp; <input type="number" class="qty" data-item="Green Peas"></td>
+                <td class="total">Total: ₹0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td style="font-weight: 800;">Total</td>
+                <td><p  id="overallTotal">Overall Total: ₹0</p></td>
+            </tr>
+        </table>
+        
+    </div>
+  </body>
+</html>
