@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Clock</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+        margin-top: -15rem;
+        background-color:rgb(255, 255, 255) ;
+    }
+
+    #clock {
+      color: rgb(0, 255, 0);
+      font-size: 3em;
+      font-family: 'Arial', sans-serif;
+    }
+    .box{
+        margin:5rem;
+        padding: 20px;
+        background-color: black;
+        border: 5px solid rgb(0, 255, 0);
+        border-radius: 2rem;
+    }
+    p{
+        color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+<body>
+ <div class="box">
+    <div id="clock"></div>
+    <p>Display real Time Using JS</p>
+ </div>
+ 
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+
+      const clockDisplay = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').innerText = clockDisplay;
+    }
+
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+
+    // Initial call to display the clock immediately
+    updateClock();
+  </script>
+</body>
+</html>
